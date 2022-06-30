@@ -42,12 +42,16 @@ header > h1 {
     padding-bottom: 10px;
     font-family: var(--fonte-titulo);
     text-shadow: 3px 2px 7px 0px rgba(0, 0, 0, 0.377);;
+    max-width: 650px;
+    margin: auto;
 
 }
 
 header > p {
     font-size: 1.6em;
     font-family: var(--fonte-japao);
+    margin: auto;
+    max-width: 500px;
 }
 
 nav {
