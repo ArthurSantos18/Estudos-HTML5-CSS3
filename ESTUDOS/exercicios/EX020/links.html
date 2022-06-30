@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-class
+        :: = psuedo-element
+        > = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkcyan;
+        }
+
+        a:hover {
+            color: yellow;
+            text-decoration: underline;   
+        }
+
+        a:active {
+            color: black;
+        }
+
+        .especial {
+            background-color: aqua;
+        }
+
+        .especial::before {
+            content: '->';
+
+        }
+        .especial::after {
+            content: '<-';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://revuestarlight.com/" target="_blank">Site em Revue Starlight</a></li>
+        <li><a href="https://revuestarlight.bushimo.jp/" target="_blank">Site em Revue Starlight Relive</a></li>
+        <li><a href="https://www.youtube.com/c/starlight_ch" class="especial" target="_blank">Canal do Youtube Revue Starlight</a></li>
+    </ul>
+</body>
+</html>
